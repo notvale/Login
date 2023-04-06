@@ -1,0 +1,149 @@
+body{
+    margin: 0; 
+    padding: 0;
+    font-family: montserrat; 
+   background: linear-gradient(120deg, #d5c9b0, #df8415);
+   /*  background: white;*/
+    height: 100vh;
+    overflow:hidden;
+}
+
+.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    /*con el translate posicionamos el formulario*/
+    transform: translate(-50%, -50%) ;
+    width: 400px;
+    background: white;
+   /* background: linear-gradient(120deg, #d5c9b0, #df8415);*/
+    border-radius: 10px;
+    
+
+}
+
+.center h1{
+    text-align:center;
+    padding: 0 0 2px 0;
+    
+}
+
+.center form{
+    padding:0 40px;
+    box-sizing:border-box;
+}
+
+form .txt_field{
+    position: relative;
+    /*El border botom puso la línea bajo el texto
+    border-bottom: 2px solid #adadad;*/
+    margin:30 px 0;
+
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    /*Con este height alargó el espacio*/
+    height: 40px;
+    /*font-size:16px;*/
+    background-color: #d8d2d2;
+   /* border-color: #df8415;*/
+    border-radius: 15px;
+    border-color: #d5c9b0;
+   
+    /*margin: 3px;
+    con el none le quitó el borde al recuadro de texto
+    border: none;
+    background: none;
+    outline: none;*/
+    }
+
+    .txt_field label{
+       position: top;
+        /*con el top se posicionó la palabra sobre la línea*/
+        top:50%;
+        left: 5 px;
+        color: #e89c04;
+        font-weight: bold;
+        
+        /*con el translate se posicionó la palabra más arriba de la línea*/
+        transform: translateY(+50%);
+        font-size: 16px;
+        pointer-events: none;
+        transition: .5s;
+
+    }
+
+    .txt_field span::before{
+        content:'';
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        /*color de la línea que está bajo el texto.
+        background-color: #d09409;*/
+       transition: .5s;
+
+    }
+
+    /*con esto se mueve el texto al pasar el mouse
+    .txt_field input: focus ~ label,
+    .txt_field input: valid ~ label{
+top: -5px;
+color: #2691d9;
+    }
+
+    .txt_field input: focus ~ span::before,
+    .txt_field input: valid ~ span::before{
+        width: 100%;
+    }*/
+
+ 
+    .pass{
+        margin: -5px 0 20px 5px;
+        color: #a60606;
+        cursor:pointer;
+    }
+/*
+    .pass:hover{
+        text-decoration:underline;
+
+    }
+
+  */ 
+    input [type="submit"]{
+        width: 100%;
+        height: 50px;
+        border: 1px solid;
+      position:center;
+        border-radius: 25px ;
+        font-size: 50 px; 
+        color: blue;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+    }
+
+input[type="submit"]:hover{
+border-color: #e6a10c;
+transition: .5s;
+
+    }
+
+.signup_link{
+    margin: 30 px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.signup_link a {
+    color:#2691d9;
+    text-decoration:none;
+}
+
+.signup_link a: hover{
+    text-decoration: underline;
+}
+
